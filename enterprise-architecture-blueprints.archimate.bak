@@ -166,7 +166,6 @@ Persistence: Bind Mounts
 SSL: Nginx (Let's Encrypt)</content>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="[VIew] VPS Prod - host services" id="id-b7d8fe4ef18f490281a4d557202196af"/>
     </folder>
     <folder name="02. Solution Architecture" id="id-41381c4f9945422d9fedfdbdf2a87a70"/>
     <folder name="03. Enterprise Standards &amp; Frameworks" id="id-c0d3774bb96d467ab561f1dbfdf829ea"/>
