@@ -694,6 +694,5 @@ SSL: Nginx (Let's Encrypt)</content>
     <folder name="02. Solution Architecture" id="id-41381c4f9945422d9fedfdbdf2a87a70"/>
     <folder name="03. Enterprise Standards &amp; Frameworks" id="id-c0d3774bb96d467ab561f1dbfdf829ea"/>
     <folder name="04. Automation &amp; Workflows" id="id-c2bd23f106d54bd9be300c38f901c950"/>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-f55c6b0ef8574ecc8c1ba0b13f2c0359"/>
   </folder>
 </archimate:model>

@@ -143,10 +143,8 @@ sudo systemctl enable docker.service</documentation>
     <element xsi:type="archimate:AssignmentRelationship" id="id-fc087dfbae944132b5ac64839ab602b5" source="id-19b8324acedb4c13b8214fe34c4c2439" target="id-1fd49f2700a04725850b72be9d9e9c14"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-aec0dbae2f8143e38763208895f9a5b9" source="id-4b5184af0a924bda81891a1f4b2afb58" target="id-8201edb8be974416bb9d27b8af6634b2"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-f89fcb030e9c4613a52253980340cdb4" source="id-139abcd560f44faa9274bb0c256567f7" target="id-750a3c48df7c40e39ebe6649a26d1ad1"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-c12d40c394bc4f198a07f876b6448ee8" source="id-5c4da94efcd144dd8875a3d275259005" target="id-2751993de0ba415aa208a110bb6862d4"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-213e5e4c67d4418bb725e149570ce948" source="id-2751993de0ba415aa208a110bb6862d4" target="id-5c5343424af7464c932405cfa1e56a30"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-f3a0886181d64594996d1fc36683a367" source="id-2751993de0ba415aa208a110bb6862d4" target="id-26de43a7f3a743cea53a9fa1bc72a7c1"/>
-    <element xsi:type="archimate:AccessRelationship" id="id-948e4164891044fdb1d2d11f13932f5c" source="id-5c4da94efcd144dd8875a3d275259005" target="id-64982a4704df482ca79f70ce42a98618"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-5d453385937943d9ac696309e97a12d7" source="id-94b7abd6624b44a8a350cd002d10cc5e" target="id-7840ccec0ecb4bd0a5b85542153898ff"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-96459a1ad28143989beb0781e97b437b" source="id-4b5184af0a924bda81891a1f4b2afb58" target="id-5c4da94efcd144dd8875a3d275259005"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-e4c8bce3f898412fa6a81d218f57f3a5" source="id-4b5184af0a924bda81891a1f4b2afb58" target="id-94b7abd6624b44a8a350cd002d10cc5e"/>
@@ -183,6 +181,8 @@ sudo systemctl enable docker.service</documentation>
     <element xsi:type="archimate:AggregationRelationship" id="id-b9a5b35ddf48490dabab648755b4a149" source="id-70567d61a892443ab2c1d1043261bf03" target="id-05972d8d1d704ac085c0e039a4ae4b74"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-ad4b2887a8a3441589c1f9486e10064e" source="id-19b8324acedb4c13b8214fe34c4c2439" target="id-c29cbb28e8b44847a100209fbe5caa8e"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-55c2e3cafaa44edb80b9ce700ae804fa" source="id-4b5184af0a924bda81891a1f4b2afb58" target="id-8a4302e487744ed9ae9c6283fe9e36b6"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-e68d7c14c79b4d6abef94fad21250925" source="id-5c4da94efcd144dd8875a3d275259005" target="id-64982a4704df482ca79f70ce42a98618"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-565e2db70b3943b69d98903c596cef5e" source="id-5c4da94efcd144dd8875a3d275259005" target="id-2751993de0ba415aa208a110bb6862d4"/>
   </folder>
   <folder name="Views" id="id-705433c6e7ea42058b724c9effdd75ba" type="diagrams">
     <folder name="01. Infraestructure &amp; Deployment" id="id-0620ba67841e490b9adfcc191d0449e3">
@@ -290,9 +290,13 @@ SSL: Nginx (Let's Encrypt)</content>
             <sourceConnection xsi:type="archimate:Connection" id="id-98d66395f9a04e3d8ead925803028516" source="id-0c70906eca4340c08c1ec7672c575fc6" target="id-a1a589723103428891a9b59d6602da00" archimateRelationship="id-55c2e3cafaa44edb80b9ce700ae804fa"/>
             <child xsi:type="archimate:DiagramObject" id="id-ebb4a28dcdf24a0497e9d716fc58ea6a" targetConnections="id-279f6517957b464aabd1faa224da14e3" textAlignment="1" archimateElement="id-5c4da94efcd144dd8875a3d275259005" type="1">
               <bounds x="12" y="132" width="253" height="241"/>
-              <sourceConnection xsi:type="archimate:Connection" id="id-c30b952104b6464ca164f7ac44b88e1f" source="id-ebb4a28dcdf24a0497e9d716fc58ea6a" target="id-5fa0cab395694417b12d8b96319b9000" archimateRelationship="id-948e4164891044fdb1d2d11f13932f5c"/>
-              <sourceConnection xsi:type="archimate:Connection" id="id-5b639e225ff04dbebcee664b7dfe917b" source="id-ebb4a28dcdf24a0497e9d716fc58ea6a" target="id-3bce0a409f3342389fd07cd25f1977f1" archimateRelationship="id-c12d40c394bc4f198a07f876b6448ee8"/>
-              <child xsi:type="archimate:DiagramObject" id="id-3bce0a409f3342389fd07cd25f1977f1" targetConnections="id-5b639e225ff04dbebcee664b7dfe917b" textAlignment="1" archimateElement="id-2751993de0ba415aa208a110bb6862d4" type="1">
+              <sourceConnection xsi:type="archimate:Connection" id="id-51c0e3d5f51e4200aac1009ef921e2cc" source="id-ebb4a28dcdf24a0497e9d716fc58ea6a" target="id-5fa0cab395694417b12d8b96319b9000" archimateRelationship="id-e68d7c14c79b4d6abef94fad21250925"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-4dd1fb8f9a9345a0809cbea63126dba1" source="id-ebb4a28dcdf24a0497e9d716fc58ea6a" target="id-3bce0a409f3342389fd07cd25f1977f1" archimateRelationship="id-565e2db70b3943b69d98903c596cef5e"/>
+              <child xsi:type="archimate:DiagramObject" id="id-5fa0cab395694417b12d8b96319b9000" targetConnections="id-51c0e3d5f51e4200aac1009ef921e2cc" lineWidth="2" lineColor="#e5a50a" archimateElement="id-64982a4704df482ca79f70ce42a98618">
+                <bounds x="12" y="36" width="229" height="37"/>
+                <feature name="deriveElementLineColor" value="false"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-3bce0a409f3342389fd07cd25f1977f1" targetConnections="id-4dd1fb8f9a9345a0809cbea63126dba1" textAlignment="1" archimateElement="id-2751993de0ba415aa208a110bb6862d4" type="1">
                 <bounds x="12" y="84" width="229" height="133"/>
                 <feature name="lineStyle" value="0"/>
                 <sourceConnection xsi:type="archimate:Connection" id="id-5342d3fe83324dd5a20ca764955ae494" source="id-3bce0a409f3342389fd07cd25f1977f1" target="id-ef3f8abf1d484248bb92302178d9933a" archimateRelationship="id-213e5e4c67d4418bb725e149570ce948"/>
@@ -303,10 +307,6 @@ SSL: Nginx (Let's Encrypt)</content>
                 <child xsi:type="archimate:DiagramObject" id="id-6448eb8ee7144efd874edf09063d7ec1" targetConnections="id-b9e059567d484336ac1ff3559f0ca4b6" archimateElement="id-26de43a7f3a743cea53a9fa1bc72a7c1">
                   <bounds x="12" y="84" width="205" height="37"/>
                 </child>
-              </child>
-              <child xsi:type="archimate:DiagramObject" id="id-5fa0cab395694417b12d8b96319b9000" targetConnections="id-c30b952104b6464ca164f7ac44b88e1f" lineWidth="2" lineColor="#e5a50a" archimateElement="id-64982a4704df482ca79f70ce42a98618">
-                <bounds x="12" y="36" width="229" height="37"/>
-                <feature name="deriveElementLineColor" value="false"/>
               </child>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-db49222eba7043718ea3765705095348" targetConnections="id-36bee1204f254b54b7ccbe34718ccb3c" textAlignment="1" archimateElement="id-94b7abd6624b44a8a350cd002d10cc5e" type="1">
